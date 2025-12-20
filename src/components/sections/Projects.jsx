@@ -19,8 +19,9 @@ export const Projects = () => {
             <h3 className="text-xl font-bold mb-2">Player Finder</h3>
             <p className="text-gray-400 mb-4">
               Created a GUI player and game where users can store their game
-              information through a intuitive interface. Utilizes CRUD
-              operations for data management.
+              information through a intuitive interface. Users are able to add user inforomation 
+              and their results on the games they have played such as their records. 
+              Utilizes CRUD operations for data management.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {["Java", "JavaFX", "SQL", "JDBC"].map((tech, key) => (
@@ -35,11 +36,11 @@ export const Projects = () => {
 
             <div className="flex justify-between items-center">
               <a
-                href="#"
+                href="https://github.com/Haris444-coder/Java/tree/main/PlayerLink/HarisMaleji_RamikaDinan_COMP228_Lab5"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
                 {" "}
-                View Project → {" "}
+                View Project → GitHub Repo{" "}
               </a>
             </div>
           </div>
@@ -69,11 +70,11 @@ export const Projects = () => {
 
             <div className="flex justify-between items-center">
               <a
-                href="#"
+                href="https://github.com/Haris444-coder/ShelfSync"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
                 {" "}
-                View Project → {" "}
+                View Project → GitHub Repo{" "}
               </a>
             </div>
           </div>
@@ -102,11 +103,11 @@ export const Projects = () => {
 
             <div className="flex justify-between items-center">
               <a
-                href="#"
+                href="https://github.com/Haris444-coder/C-Sharp/tree/main/InsuranceManagementSystem"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
                 {" "}
-                View Project → {" "}
+                View Project → GitHub Repo{" "}
               </a>
             </div>
           </div>
@@ -133,11 +134,11 @@ export const Projects = () => {
 
             <div className="flex justify-between items-center">
               <a
-                href="#"
+                href="https://github.com/Haris444-coder/HR-Management-System"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
                 {" "}
-                View Project → {" "}
+                View Project → GitHub Repo{" "}
               </a>
             </div>
           </div>

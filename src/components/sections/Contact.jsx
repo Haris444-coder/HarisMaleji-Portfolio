@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 export const Contact = () => {
     const[formData, setFormData] = useState({
         name: "",
+        phone: "",
         email: "",
         message: ""
     });
@@ -18,7 +19,7 @@ export const Contact = () => {
       .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
       .then((result) => {
         alert("Message Sent!");
-        setFormData({name: "", email: "", message: ""});
+        setFormData({name: "", phone: "", email: "", message: ""});
       })
       .catch(() =>
         alert("Oops! Something went wrong. Please try again.")
@@ -52,13 +53,26 @@ export const Contact = () => {
 
             <div className="relative">
               <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                value={formData.phone}
+                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                placeholder="123-456-7890"
+                onChange={(e) => setFormData({...formData, phone: e.target.value})}
+              />
+            </div>
+
+            <div className="relative">
+              <input
                 type="email"
                 id="email"
                 name="email"
                 required
                 value={formData.email}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
-                placeholder="example@gmail.com."
+                placeholder="example@gmail.com"
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
               />
             </div>
